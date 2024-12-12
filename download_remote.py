@@ -17,7 +17,7 @@ HOME_DIR = os.environ["HOME"]
 REMOTE_HOME_DIR = "/home/stella"
 REMOTE_DIR = os.path.join(REMOTE_HOME_DIR, "Revised_James_Code/final_project_mVAE_pipeline/")
 REMOTE_TEST_DIR = os.path.join(REMOTE_DIR, "test")
-REMOTE_MODEL_DIR = os.path.join(REMOTE_DIR, "models")
+REMOTE_MODEL_DIR = os.path.join(REMOTE_DIR, "models_partdata_40000")
 
 def download_file_with_key(
     host,

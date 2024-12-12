@@ -1,10 +1,9 @@
 # human_robot_signal_retargeting
 
-* Haozhi Zhang
+* Jialu Yu
 * MSR Final Project  
-* [Portfolio Post](https://jameszhz1647.wixsite.com/haozhizhang/general-8)
-* [Human Data Acquisition](https://github.com/jameszhz1647/connect_myo/tree/human_data_acquisition_clean)
-* [Robot Data Acquisition](https://github.com/jameszhz1647/RobotArmOutput/tree/robot_data_acquisition_clean)
+* [Portfolio Post](https://nucapybara.github.io/posts/my-fifth-post/)
+* [Human Data Acquisition and Robot Data Acquisition](https://github.com/NuCapybara/ROS2_Myo_Franka/tree/integrate_all)
 
 ## Overview
 
@@ -111,14 +110,16 @@ The goal of this project is to predict robot motion by monitoring human motion u
 
 - ##### Performance on each test (metric: MSE)
 
-  |                           | Test 1 | Test 2 | Test 3 | Test 4 (at t+1) |
-  | ------------------------- | ------ | ------ | ------ | --------------- |
-  | **Joints_pos_cur (at t)** | 0.0067 | 0.0285 | 0.0061 | 0.0352          |
-  | **Joints_vel_cur (at t)** | 0.0356 | 0.0514 | 0.0362 | 0.0671          |
+| Test       | Joint_pos_cur (at t) | Joint_vel_cur (at t) |
+| :--------- | :------------------: | :------------------: |
+| **Test 1** |        0.0047        |        0.0091        |
+| **Test 2** |        0.0414        |        0.0384        |
+| **Test 3** |        0.00502       |        0.011         |
+| **Test 4** |        0.0502        |        0.0481        |
 
 - ##### Plots for test 4: comparing the original pos/vel at t with predicted pos/vel at t + 1
 
-![test4_plot](source/test4_plot.png)	
+![test4_plot](source/pred_act_80000p2.png)	
 
 ## Future Work
 
